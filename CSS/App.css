@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure there are no conflicting styles */
+#root.dark, body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme .navbar {
+    background-color: #19e888;
+}
+
+.dark-theme .navbar-brand,
+.dark-theme .nav-link {
+  color: #ffffff;
+}
+
+.dark-theme .card {
+  background-color: #1e1e1e;
+  border-color: #333333;
+}
+
+.dark-theme .card-header,
+.dark-theme .card-body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+html,
+body {
+    height: 100%;
+    display: block;
+}
+
+#root {
+    height: 100%;
+    display: block;
+}
+
+
+/* In your global CSS file or component-specific styles */
+.message-content {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.message-content pre {
+  margin-bottom: 0;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.message-content code {
+  background-color: #f8f9fa;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+}
+
+.message-content p {
+  margin-bottom: 0.5rem;
+}
+
+.message-content ul, .message-content ol {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+
+.suggestion-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.suggestion-buttons button {
+    white-space: nowrap;
+}
+
+
+.modal {
+  width: 50%;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
